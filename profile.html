@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css"/>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/093104617b.js" crossorigin="anonymous"></script>
+
+    <!-- normalize -->
+    <!-- <link rel="stylesheet" href="css/normalize.css"/> -->
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Gajraj+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!---------------->
+    <title>Profile</title>
+</head>
+<body style="display: flex;">
+    <header>
+        <div class="logo">Samx</div>
+        <ul class="liste">
+            <li><a href="index.html" ><i class="fa-regular fa-chart-bar fa-fw"></i> <span>Dashboard</span></a></li>
+            <li ><a href="setting.html"><i class="fa-solid fa-gear fa-fw"></i> <span>Settings</span></a></li>
+            <li style="background-color: var(--header-color);"><a href="profile.html" ><i class="fa-regular fa-user fa-fw"></i> <span>Profile</span></a></li>
+            <li><a href="project.html"><i class="fa-solid fa-diagram-project fa-fw"></i> <span>Projects</span></a></li>
+            <li><a href="course.html"><i class="fa-solid fa-graduation-cap fa-fw"></i> <span>Courses</span></a></li>
+            <li><a href="friend.html"><i class="fa-regular fa-circle-user fa-fw"></i> <span>Friends</span></a></li>
+            <li><a href="file.html"><i class="fa-regular fa-file fa-fw"></i> <span>Files</span></a></li>
+            <li><a href="plan.html"><i class="fa-regular fa-credit-card fa-fw"></i> <span>Plans</span></a></li>
+        </ul>
+    </header>
+    <div class="main">
+        <div class="main-search">
+            <form>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Type A Keyword"/>
+            </form>
+            <div class="profile">
+                <i class="fa-regular fa-bell"></i>
+                <img src="img/avatar.png" alt="">
+            </div>
+        </div>
+        <div class="main-dashboard">
+            <h2 class="title">Profile</h2>
+            <div class="content-dashboard-profile">
+                <div class="prfl-inf box-dashboard">
+                    <div class="prfl-rating">
+                        <img src="img/avatar.png" alt="">
+                        <h3>Sami Sel</h3>
+                        <span>Level 20</span>
+                        <div class="progress-bar"></div>
+                        <div class="prfl-star">
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                        </div>
+                        <span>550 Rating</span>
+                    </div>
+                    <div class="prfl-content">
+                        <div class="prfl-box">
+                            <span class="titre-prfl">General Information</span>
+                            <div class="information">
+                                <div class="inf">
+                                    <span>Full Name: </span>&nbsp;
+                                    <p>Sami Sellal</p>
+                                </div>
+                                <div class="inf">
+                                    <span>Gender: </span>&nbsp;
+                                     <p>Male</p>
+                                </div>
+                                <div class="inf">
+                                    <span>Country: </span>&nbsp;
+                                    <p>Algeria</p>
+                                </div>
+                                <div class="close-open">
+                                    <form>
+                                        <input type="checkbox" id="toggle1" checked>
+                                        <label for="toggle1" class="toggle-box toggle-prfl"><i class="fa-solid fa-check"></i><i class="fa-solid fa-xmark"></i></label>
+                                        <!-- <div class="toggle-box"><i class="fa-solid fa-check"></i><i class="fa-solid fa-xmark"></i></div> -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prfl-box">
+                            <span class="titre-prfl">Personal Information</span>
+                            <div class="information">
+                                <div class="inf">
+                                    <span>Email: </span>&nbsp;
+                                    <p>o@nn.sa</p>
+                                </div>
+                                <div class="inf">
+                                    <span>Phone: </span>&nbsp;
+                                     <p>019123456789</p>
+                                </div>
+                                <div class="inf">
+                                    <span>Date Of Birth: </span>&nbsp;
+                                    <p>14/12/2004</p>
+                                </div>
+                                <div class="close-open">
+                                    <form>
+                                        <input type="checkbox" id="toggle2" >
+                                        <label for="toggle2" class="toggle-box toggle-prfl" ><i class="fa-solid fa-check"></i><i class="fa-solid fa-xmark"></i></label>
+                                        <!-- <div class="toggle-box"><i class="fa-solid fa-check"></i><i class="fa-solid fa-xmark"></i></div> -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prfl-box">
+                            <span class="titre-prfl">Job Information</span>
+                            <div class="information">
+                                <div class="inf">
+                                    <span>Title: </span>&nbsp;
+                                    <p>Full Stack Developer</p>
+                                </div>
+                                <div class="inf">
+                                    <span>Programming Language: </span>&nbsp;
+                                    <p>C & Js</p>
+                                </div>
+                                <div class="inf">
+                                    <span>Years Of Experience: </span>&nbsp;
+                                    <p>1+</p>
+                                </div>
+                                <div class="close-open">
+                                    <form>
+                                        <input type="checkbox" id="toggle3" checked>
+                                        <label for="toggle3" class="toggle-box toggle-prfl"><i class="fa-solid fa-check"></i><i class="fa-solid fa-xmark"></i></label>
+                                        <!-- <div class="toggle-box"><i class="fa-solid fa-check"></i><i class="fa-solid fa-xmark"></i></div> -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prfl-box">
+                            <span class="titre-prfl">Billing Information</span>
+                            <div class="information">
+                                <div class="inf">
+                                    <span>Payment Method: </span>&nbsp;
+                                    <p>Paypal</p>
+                                </div>
+                                <div class="inf">
+                                    <span>Email: </span>&nbsp;
+                                     <p>email@website.com</p>
+                                </div>
+                                <div class="inf">
+                                    <span>Subscription: </span>&nbsp;
+                                    <p>Monthly</p>
+                                </div>
+                                <div class="close-open">
+                                    <form>
+                                        <input type="checkbox" id="toggle4" >
+                                        <label for="toggle4" class="toggle-box toggle-prfl"><i class="fa-solid fa-check"></i><i class="fa-solid fa-xmark"></i></label>
+                                        <!-- <div class="toggle-box"><i class="fa-solid fa-check"></i><i class="fa-solid fa-xmark"></i></div> -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-skills box-dashboard">
+                    <h3>My Skills</h3>
+                    <span>Complete Skills List</span>
+                    <div class="box-skills">
+                        <p>HTML</p>
+                        <p>Pugj</p>
+                        <p>HAML</p>
+                    </div>
+                    <div class="box-skills">
+                        <p>CSS</p>
+                        <p>SASS</p>
+                        <p>Stylus</p>
+                    </div>
+                    <div class="box-skills">
+                        <p>JavaScript</p>
+                        <p>TypeScript</p>
+                    </div>
+                    <div class="box-skills">
+                        <p>Vuejs</p>
+                        <p>Reactjs</p>
+                    </div>
+                    <div class="box-skills">
+                        <p>Jest</p>
+                        <p>Jasmine</p>
+                    </div>
+                    <div class="box-skills">
+                        <p>PHP</p>
+                        <p>Laravel</p>
+                    </div>
+                    <div class="box-skills">
+                        <p>Python</p>
+                        <p>Django</p>
+                    </div>
+                </div>
+                <div class="activitie box-dashboard">
+                    <h3>Lastest Activities</h3>
+                    <span>Latest Activities Done By The User</span>
+                    <div class="activitie-box">
+                        <img src="img/activity-01 (1).png" alt="">
+                        <div class="activitie-content">
+                            <p>Store <br><span>Bought The Mastering Python Course</span></p>
+                            <p>18:10 <br><span>Yesterday</span></p>
+                        </div>
+                    </div>
+                    <div class="activitie-box">
+                        <img src="img/activity-02.png" alt="">
+                        <div class="activitie-content">
+                            <p>Academy <br><span>Got The PHP Certificate</span></p>
+                            <p>16:05<br><span>Yesterday</span></p>
+                        </div>
+                    </div>
+                    <div class="activitie-box">
+                        <img src="img/activity-03.png" alt="">
+                        <div class="activitie-content">
+                            <p>Badges <br><span>Unlocked The 10 Skills Badge</span></p>
+                            <p>18:05 <br><span>Yesterday</span></p>
+                        </div>
+                    </div>
+                    <div class="activitie-box">
+                        <img src="img/activity-01.png" alt="">
+                        <div class="activitie-content">
+                            <p>Store <br><span>Bought The Typescript Course</span></p>
+                            <p>12:05 <br><span>Yesterday</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
