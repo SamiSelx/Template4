@@ -1906,3 +1906,87 @@ table tbody tr:hover{
     font-size: 0.9em;
     letter-spacing: -1px;
 }
+
+.plan-box{
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+}
+.plan-box .plan-inf{
+    border: 3px solid #22c55e;
+}
+.plan-box .plan-inf div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #22c55e;
+    padding: 20px 0;
+    color: white;
+    width: calc(100% -  8px);
+    height: 100%;
+    margin: 4px;
+}
+.plan-box:nth-of-type(2) .plan-inf{
+    border-color: var(--btn-color);
+}
+.plan-box:nth-of-type(2) .plan-inf div{
+    background-color: var(--btn-color);
+}
+.plan-box:nth-of-type(3) .plan-inf{
+    border-color: var(--orange-color);
+}
+.plan-box:nth-of-type(3) .plan-inf div{
+    background-color: var(--orange-color);
+}
+.plan-box .plan-inf div p:first-of-type{
+    font-size: 1.5em;
+}
+.plan-box .plan-inf div p:last-of-type{
+    margin-top: 4px;
+    font-size: 2em;
+}
+
+.plan-box .plan-prop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--main-color);
+    margin-top: 20px;
+}
+.plan-prop div{
+    display: flex;
+    align-items: center;
+}
+.plan-box .plan-prop i.help{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.plan-prop div i{
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+.plan-prop div i.fa-check{
+    color: #22c55e;
+}
+.plan-prop div i.fa-xmark{
+    color:  #f44336 ;
+}
+.plan-box .plan-join{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: white;
+    background-color: #22c55e;
+}
+.plan-box:nth-of-type(2) .plan-join{
+    background-color: var(--btn-color);
+}
+.plan-box .plan-footer{
+    color: var(--text-color);
+    width: fit-content;
+    margin: 20px auto 0;
+}
