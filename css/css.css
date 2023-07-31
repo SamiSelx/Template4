@@ -1650,3 +1650,259 @@ table tbody tr:hover{
         flex-basis: 100%;
     }
 }
+
+.project-box{
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.project-box .date-prj{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.project-box span{
+    margin: 0;
+}
+.project-box .title-prj{
+    font-size: 1.04em;
+    font-weight: 500;
+}
+.project-box .project-img{
+    display: flex;
+    margin-top: 30px;
+}
+.project-box .project-img a{
+    position: relative;
+    height: 40px;
+    transition: 0.3s;
+}
+.project-box .project-img a img{
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.project-box .project-img a:not(:first-of-type) img{
+    margin-left: -10px;
+}
+.project-box .project-img a:hover{
+    z-index: 1;
+}
+
+.project-task{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--main-color) transparent var(--main-color) transparent;
+}
+.project-task p{
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 5px 8px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+
+.project-footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-footer .progress-project{
+    position: relative;
+    height: 8px;
+    width: 40%;
+    background-color: var(--main-color);
+    border-radius: 8px;
+}
+.project-footer .progress-project::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 80%;
+    background-color: var(--green-color);
+    border-radius: 8px;
+}
+.content-dashboard .project-box:nth-of-type(1) .progress-project::before,
+.content-dashboard .project-box:nth-of-type(6) .progress-project::before{
+    width: 50% ;
+    background-color: var(--red-color) ;
+}
+.content-dashboard .project-box:nth-of-type(3) .progress-project::before{
+    width: 100%;
+    background-color: var(--btn-color);
+}
+@media(max-width:768px){
+    .project-box .project-task{
+        flex-direction: column;
+    }
+    .project-box .project-footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.content-dashboard-courses{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+}
+@media(max-width:420px){
+    .content-dashboard-courses{
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    }
+}
+.course-box{
+    border-radius: 0 0 8px 8px !important;
+    padding: 0 !important;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.course-box img:nth-of-type(2){
+    border-radius:8px 8px 0 0;
+}
+.course-box img.avatar{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 2px solid white;
+    height: 60px;
+    border-radius: 50%;
+}
+.course-box .course-content{
+    padding: 20px;
+}
+.course-content h4{
+    font-weight: 500;
+    font-size: 1.08em;
+}
+.course-content span{
+    line-height: 1.3;
+    font-size: 0.96em;
+}
+.course-content .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.course-content .info p{
+    padding: 5px 10px;
+    color: white;
+    background-color: var(--btn-color);
+    border-radius: 8px;
+    font-size: 0.95em; 
+    z-index: 1;
+}
+.course-content .info::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    height: 2px;
+    background-color: var(--main-color);
+    width: calc(100% + 40px);
+}
+.course-content .course-inf{
+    display: flex;
+    justify-content: space-between;
+
+}
+.course-content .course-inf span{
+    margin: 0;
+    font-size: 0.95em;
+}
+
+.friend-box{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+}
+.friend-contact a{
+    padding: 8px 9.5px;
+    color: var(--text-color);
+    font-size: 0.95em;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    transition: 0.3s;
+}
+.friend-contact a:hover{
+    background-color: var(--btn-color);
+    color: white;
+}
+.friend-box .friend-profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.friend-box .friend-profile img{
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.friend-box .friend-profile span{
+    margin-top: 6px;
+    font-size: 0.95em;
+}
+.friend-box .friend-information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 15px 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--main-color) transparent var(--main-color) transparent;
+}
+.friend-box .friend-information div.inf:not(:last-of-type){
+    margin-bottom: 13px;
+}
+.friend-box .friend-information div.inf i{
+    margin-right: 7px;
+}
+.friend-box .friend-information .Vip p{
+    color: rgb(245 164 51 / 25%);
+    font-weight: 600;
+    font-size: 2.4em;
+}
+.friend-box .friend-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.friend-box .friend-footer a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+.friend-box .friend-footer a:first-of-type{
+    background-color: var(--btn-color);
+}
+.friend-box .friend-footer a:last-of-type{
+    background-color: rgb(251 60 48);
+}
+.friend-box .friend-footer span{
+    margin: 0;
+    font-size: 0.9em;
+    letter-spacing: -1px;
+}
